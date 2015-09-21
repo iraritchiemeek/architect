@@ -2,8 +2,8 @@ function View () {
 }
 
 View.prototype.make3Divs = function() {
-	for (var i = 3; i >= 0; i--) {
-		$('container').append('<div class="frame" id="frame_' + i + '">')
+	for (var i = 3 - 1; i >= 0; i--) {
+		$('#container').append('<div class="frame" id="frame_' + i + '">')
 	};
 };
 

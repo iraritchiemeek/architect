@@ -6,3 +6,42 @@ html, body{
 	background-size: 100% 100%;
 	background: linear-gradient(to bottom left, white, #BDBDBD);
 }
+
+#rows_container {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	height: 80%;
+	width: 70%;
+}
+
+.row:nth-child(1) {
+	top: 30%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	height: 30%;
+	width: 100%;
+	background-color: red;
+}
+
+.row:nth-child(2) {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	height: 30%;
+	width: 100%;
+	background-color: blue;
+}
+
+.row:nth-child(3) {
+	top: 70%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	height: 30%;
+	width: 100%;
+	background-color: purple;
+}
