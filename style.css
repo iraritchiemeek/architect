@@ -4,7 +4,7 @@ html, body{
 	height: 100%;
 	overflow: hidden;
 	background-size: 100% 100%;
-	background: linear-gradient(to bottom left, white, #BDBDBD);
+	/*background: linear-gradient(to bottom left, white, #BDBDBD);*/
 }
 
 #rows_container {
@@ -16,17 +16,39 @@ html, body{
 	width: 70%;
 }
 
-.row:nth-child(1) {
-	top: 30%;
+.row {
+	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translateX(-50%) translateY(-50%);
-	height: 30%;
+	height: 100%;
 	width: 100%;
-	background-color: red;
 }
 
-.row:nth-child(2) {
+.frame {
+	background-size: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 300px;
+	width: 300px;
+	top: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.frame:nth-child(1) {
+	left: 85%;
+}
+
+.frame:nth-child(2) {
+	left: 50%;
+}
+
+.frame:nth-child(3) {
+	left: 15%;
+}
+
+/*.row:nth-child(2) {
 	top: 50%;
 	left: 50%;
 	position: absolute;
@@ -44,4 +66,4 @@ html, body{
 	height: 30%;
 	width: 100%;
 	background-color: purple;
-}
+}*/

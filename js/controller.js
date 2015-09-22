@@ -11,10 +11,11 @@ $(window).load(function(){
 	 	url: url,
 	 	dataType: "jsonp",
 	 	success: function(res){
-	 		view.displayImages(instagram.makeImageArray(res))
+	 		view.fillFrames(instagram.makeImageArray(res))
 	 	},
 	 	error: function(){
 	 		alert('Something went Wrong')
 	 	}
 	})
+
 })

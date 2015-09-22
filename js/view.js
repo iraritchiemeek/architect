@@ -7,6 +7,8 @@ View.prototype.make3Divs = function() {
 	};
 };
 
-View.prototype.displayImages = function(image_array) {
-	console.log(image_array)
+View.prototype.fillFrames = function(image_array) {
+	$.each($('.frame'), function(index, value) {
+		$(value).css({'backgroundImage':'url(' + image_array[randNum(image_array.length)] + ')'})
+	})
 };
