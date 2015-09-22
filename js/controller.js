@@ -11,6 +11,11 @@ $(window).load(function(){
 	 	url: url,
 	 	dataType: "jsonp",
 	 	success: function(res){
+	 		var user_image = res.data[0].user.profile_picture
+	 		var user_name = res.data[0].user.username
+
+	 		console.log(res)
+	 		view.displayUserInfo(user_image, user_name)
 	 		view.fillFrames(instagram.makeImageArray(res))
 	 	},
 	 	error: function(){

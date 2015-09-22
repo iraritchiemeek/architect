@@ -12,3 +12,8 @@ View.prototype.fillFrames = function(image_array) {
 		$(value).css({'backgroundImage':'url(' + image_array[randNum(image_array.length)] + ')'})
 	})
 };
+
+View.prototype.displayUserInfo = function(image_url, username) {
+	$('#user_name').text(username)
+	$('#user_image').css({'backgroundImage': 'url(' + image_url + ')'})
+};
