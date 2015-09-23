@@ -14,6 +14,6 @@ View.prototype.fillFrames = function(image_array) {
 };
 
 View.prototype.displayUserInfo = function(image_url, username) {
-	$('#user_name').text(username)
+	$('#user_name').text(username.toUpperCase())
 	$('#user_image').css({'backgroundImage': 'url(' + image_url + ')'})
 };
