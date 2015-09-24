@@ -8,6 +8,20 @@ $(window).load(function(){
 		view.unhideDeleteExpand(e)
 	})
 
+	$('.frame').on('mouseleave', function(e){
+		view.hideDeleteExpand(e)
+	})
+
+	$('.image_interaction').on('mouseenter', function(e){
+		view.increaseOpacity(e)
+	})
+
+	$('.image_interaction').on('mouseleave', function(e){
+		view.resetOpacity(e)
+	})
+
+
+
 	$.ajax({
 	 	type: "GET",
 	 	url: url,

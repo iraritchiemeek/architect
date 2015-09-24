@@ -23,3 +23,19 @@ View.prototype.unhideDeleteExpand = function(frame) {
 		$(div).show()
 	})
 };
+
+View.prototype.hideDeleteExpand = function(frame) {
+	$.each(frame.currentTarget.children, function(index, div){
+		$(div).fadeOut('slow', function(){
+			$(div).hide
+		})
+	})
+};
+
+View.prototype.increaseOpacity = function(button) {
+	$(button.currentTarget).css({'opacity':'0.8'})
+};
+
+View.prototype.resetOpacity = function(button) {
+	$(button.currentTarget).css({'opacity':'0.4'})
+};
