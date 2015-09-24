@@ -4,7 +4,9 @@ $(window).load(function(){
 	var user_id = '453332141'
 	var url = 'https://api.instagram.com/v1/users/' + user_id + '/media/recent/?client_id=7bd7db58c7744703b10aca3f91c71cb5'
 
-	// view.make3Divs()
+	$('.frame').on('mouseenter', function(e){
+		view.unhideDeleteExpand(e)
+	})
 
 	$.ajax({
 	 	type: "GET",
@@ -14,7 +16,6 @@ $(window).load(function(){
 	 		var user_image = res.data[0].user.profile_picture
 	 		var user_name = res.data[0].user.username
 
-	 		console.log(res)
 	 		view.displayUserInfo(user_image, user_name)
 	 		view.fillFrames(instagram.makeImageArray(res))
 	 	},

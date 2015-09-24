@@ -17,3 +17,9 @@ View.prototype.displayUserInfo = function(image_url, username) {
 	$('#user_name').text(username.toUpperCase())
 	$('#user_image').css({'backgroundImage': 'url(' + image_url + ')'})
 };
+
+View.prototype.unhideDeleteExpand = function(frame) {
+	$.each(frame.currentTarget.children, function(index, div){
+		$(div).show()
+	})
+};
